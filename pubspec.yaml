@@ -1,0 +1,42 @@
+name: event_venue_app
+description: Merged Activity 4 + 5 Flutter App.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.2  # State management (fixes provider errors)
+  video_player: ^2.9.1  # Video (latest stable)
+  chewie: ^1.7.5  # Video controls
+  audioplayers: ^6.1.0  # Audio (updated version for compatibility)
+  font_awesome_flutter: ^10.7.0  # Custom icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Fonts
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+
+  # Assets
+  assets:
+    - assets/images/  # Loads all JPGs in folder
+    - assets/videos/sample.mp4  # Exact file path
+    - assets/audio/sample.mp3   # Exact file path
